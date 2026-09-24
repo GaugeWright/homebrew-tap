@@ -1,36 +1,36 @@
 class Whipplescript < Formula
   desc "Control-plane CLI for WhippleScript workflows"
   homepage "https://github.com/GaugeWright/whipplescript"
-  version "0.5.6"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.5.6/whipplescript-aarch64-apple-darwin.tar.xz"
-      sha256 "b7c49e0f0cd7ed122aaf962d848ae6287542366b62b2d0c27e41194dab77aa21"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.6.0/whipplescript-aarch64-apple-darwin.tar.xz"
+      sha256 "743761071b6b3caac002a4aed360fc25733486b7e9fc3db5fb36e523c7ebe24e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.5.6/whipplescript-x86_64-apple-darwin.tar.xz"
-      sha256 "343159fd18c89dd8d94bbfa497ca7df81018df41c7eb1fb50e1e2f17d4cf1c09"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.6.0/whipplescript-x86_64-apple-darwin.tar.xz"
+      sha256 "2697cc1447472a661e40e23aaea6c0008c12737d21250b54f4c35091b50b8952"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.5.6/whipplescript-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f5042ef5452630868469b6103e9aec2dafcf91400a8ff89cb8a47a0e4095cf87"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.6.0/whipplescript-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3820d0a8c5b48e0a2611373036cca2c5a022f5c44555434d156623a9eacb4e50"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.5.6/whipplescript-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b559ef73192a8a143822b883b5f2a3825cb2ae5a3b5a72166c4e586999b52842"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.6.0/whipplescript-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "207231d427bb19ab53e30ab4e132f50b1d93b859c72dc9e10284a07502314707"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
+    "aarch64-apple-darwin": {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
-    "x86_64-unknown-linux-gnu":  {},
-  }.freeze
+    "x86_64-apple-darwin": {},
+    "x86_64-pc-windows-gnu": {},
+    "x86_64-unknown-linux-gnu": {}
+  }
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
