@@ -1,25 +1,25 @@
 class Whipplescript < Formula
   desc "Control-plane CLI for WhippleScript workflows"
   homepage "https://github.com/GaugeWright/whipplescript"
-  version "0.7.1"
+  version "0.8.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.7.1/whipplescript-aarch64-apple-darwin.tar.xz"
-      sha256 "93acc1366117fe8ea0bae6113f72b83907e5ce6ea0bbf57725cb7e51d6089c5c"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.8.0/whipplescript-aarch64-apple-darwin.tar.xz"
+      sha256 "ab7eaa46746008e7423c110f5e3ef32a33ee5bb58994b58e2f2e2688f655e215"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.7.1/whipplescript-x86_64-apple-darwin.tar.xz"
-      sha256 "043231375dab1662913c8d8830245f405e9e679ed51f9a90ff99d11286797ea5"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.8.0/whipplescript-x86_64-apple-darwin.tar.xz"
+      sha256 "6d77eac3402f236e1402a50fe90ecbdfda559718d2cc4bd3d6cde732fe7884fa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.7.1/whipplescript-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d7733d8d87301c16dd31782a8c25a0fbe452e29bcbb203a315effd938b460aa5"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.8.0/whipplescript-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e11b54ab845d832df2bd7a64aeca8cdec03b4a6d065fbcbb3589d2a2df12a0d7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.7.1/whipplescript-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2432836b551650ef3d9a6c20b3c801c9556b65ae7d6aa099116c90c3932c67d7"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.8.0/whipplescript-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ffbe485496d67fa49096f6757cbf3ec9aa890506171dac993dc4299a3f0a3c7a"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
