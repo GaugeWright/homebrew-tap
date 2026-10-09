@@ -1,25 +1,25 @@
 class Whipplescript < Formula
   desc "Control-plane CLI for WhippleScript workflows"
   homepage "https://github.com/GaugeWright/whipplescript"
-  version "0.10.0"
+  version "0.11.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.10.0/whipplescript-aarch64-apple-darwin.tar.xz"
-      sha256 "6c215f992276f8020844a7334206e29e64cc0a3af4b6a2c2671e861839c25d0f"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.11.0/whipplescript-aarch64-apple-darwin.tar.xz"
+      sha256 "8316b3c6aaf1a6c2adf29316d332e53bc628aee454aa46a3e2f03907228a690f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.10.0/whipplescript-x86_64-apple-darwin.tar.xz"
-      sha256 "0c65b4df51135de91d13a9f3d94c9770419d4e35c41996c14400ded051c1b209"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.11.0/whipplescript-x86_64-apple-darwin.tar.xz"
+      sha256 "4962b1dd56e8ee9503ad250368c9d8f762264759d911b718a8261765be921408"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.10.0/whipplescript-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cd9c3832d9e5a2f8804983efd5d0e25f0a298ea48fc750a1e2cdb970ea3dcff8"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.11.0/whipplescript-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e73cd800f118ad41fe5e22bd5366a58176a91b56422dd60de50734cb446261d5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.10.0/whipplescript-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ed6039889de405c9711093369946e9c30a8d9476b500c02e6f85d01603e7db4d"
+      url "https://github.com/GaugeWright/whipplescript/releases/download/v0.11.0/whipplescript-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c886d4615d2835859839cf50758b8e78d8c6496896d98324fda4c51d5aef1cff"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
